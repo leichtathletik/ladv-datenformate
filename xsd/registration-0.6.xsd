@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="athlete" type="athlete"/>
+
+  <xs:element name="club" type="club"/>
+
+  <xs:element name="comment" type="comment"/>
+
+  <xs:element name="event" type="event"/>
+
+  <xs:element name="individual" type="individual"/>
+
+  <xs:element name="performance" type="performance"/>
+
+  <xs:element name="registration" type="registration"/>
+
+  <xs:element name="relay" type="relay"/>
+
+  <xs:element name="relaymember" type="relaymember"/>
+
+  <xs:complexType name="registration">
+    <xs:sequence>
+      <xs:element name="athletes" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="athlete" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="clubs" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="club" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="events" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="event" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="individuals" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="individual" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="relays" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="relay" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="athlete">
+    <xs:sequence/>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+    <xs:attribute name="number" type="xs:int"/>
+    <xs:attribute name="forename" type="xs:string" use="required"/>
+    <xs:attribute name="lastname" type="xs:string" use="required"/>
+    <xs:attribute name="yearofbirth" type="xs:int" use="required"/>
+    <xs:attribute name="sex" type="sex" use="required"/>
+    <xs:attribute name="club" type="xs:IDREF" use="required"/>
+    <xs:attribute name="country" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="club">
+    <xs:sequence/>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+    <xs:attribute name="number" type="xs:int" use="required"/>
+    <xs:attribute name="type" type="clubType" use="required"/>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="shortname" type="xs:string" use="required"/>
+    <xs:attribute name="country" type="xs:string" use="required"/>
+    <xs:attribute name="region" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="event">
+    <xs:sequence/>
+    <xs:attribute name="ageCode" type="xs:string" use="required"/>
+    <xs:attribute name="disciplineCode" type="xs:string" use="required"/>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="individual">
+    <xs:sequence>
+      <xs:element ref="comment" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element ref="performance" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="alliance" type="xs:IDREF"/>
+    <xs:attribute name="athlete" type="xs:IDREF" use="required"/>
+    <xs:attribute name="event" type="xs:IDREF" use="required"/>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="comment">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="authorname" type="xs:string" use="required"/>
+        <xs:attribute name="order" type="xs:int" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="performance">
+    <xs:sequence/>
+    <xs:attribute name="date" type="xs:string"/>
+    <xs:attribute name="disciplineCode" type="xs:string"/>
+    <xs:attribute name="expectedValue" type="xs:boolean"/>
+    <xs:attribute name="handTime" type="xs:boolean"/>
+    <xs:attribute name="indoor" type="xs:boolean" use="required"/>
+    <xs:attribute name="location" type="xs:string"/>
+    <xs:attribute name="value" type="xs:string" use="required"/>
+    <xs:attribute name="wind" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="relay">
+    <xs:sequence>
+      <xs:element ref="comment" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element ref="performance" minOccurs="0"/>
+      <xs:element ref="relaymember" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="club" type="xs:IDREF" use="required"/>
+    <xs:attribute name="event" type="xs:IDREF" use="required"/>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="relaymember">
+    <xs:sequence/>
+    <xs:attribute name="athlete" type="xs:IDREF" use="required"/>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <xs:simpleType name="sex">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="M"/>
+      <xs:enumeration value="W"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="clubType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CLUB"/>
+      <xs:enumeration value="STG"/>
+      <xs:enumeration value="LG"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+
