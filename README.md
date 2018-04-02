@@ -13,6 +13,7 @@ Hauptinformationsseite zu den LADV Datenformaten: [ladv.de/entwickler](https://l
 
 ### Meldungen 0.7
 
+- [Übersicht Änderungen](https://github.com/leichtathletik/ladv-datenformate/issues/1) zu 0.6 Meldungen Format
 - Dokumentation: [PDF](http://html.ladv.de/api/2018-DRAFT-LADV-Meldungen-Datenformat-0.7.pdf)
 - XML-Schema Datei: [offizielles Schema](http://html.ladv.de/format/registration/0.7/registration-draft.xsd) /
 [Schema auf GitHub](https://github.com/leichtathletik/ladv-datenformate/tree/master/xsd/registration-0.7-draft.xsd)
