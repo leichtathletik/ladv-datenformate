@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<registration>
+    <clubs>
+        <club id="C1" number="1234" type="CLUB" name="TSV Besteck" shortname="TSV Besteck" country="GER" region="WÜ"/>
+    </clubs>
+    <athletes>
+        <athlete id="A1" number="12345" forename="Martin" lastname="Messer" yearofbirth="1996" sex="M" club="C1" country="GER"/>
+        <athlete id="A2" number="12346" forename="Gerd" lastname="Gabel" yearofbirth="1995" sex="M" club="C1" country="GER"/>
+        <athlete id="A3" number="12346" forename="Leander" lastname="Löffel" yearofbirth="1995" sex="M" club="C1" country="GER"/>
+    </athletes>
+    <eventdefinitions>
+        <eventdefinition id="ED1" name="2x100m Staffel" shortName="2x100m" eventtype="RELAY" formattype="TIME" precision="SECOND_100TH" vendorCode="RELAY:2x100"/>
+    </eventdefinitions>
+    <events>
+        <event id="E1" ageCode="M">
+            <customevent eventdefinition="ED1"/>
+        </event>
+    </events>
+    <individuals/>
+    <relays>
+        <relay id="R1" club="C1" event="E1" lateregistration="true" notranked="true">
+            <participant athlete="A1" id="P1"/>
+            <participant athlete="A2" id="P2"/>
+            <participant athlete="A3" id="P3"/>
+        </relay>
+    </relays>
+    <kilas/>
+</registration>
+

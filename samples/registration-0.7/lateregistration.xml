@@ -7,9 +7,14 @@
         <athlete id="A1" number="12345" forename="Martin" lastname="Messer" yearofbirth="1996" sex="M" club="C1" country="GER"/>
         <athlete id="A2" number="12345" forename="Gabriel" lastname="Gabel" yearofbirth="1996" sex="M" club="C1" country="GER"/>
     </athletes>
+    <eventdefinitions/>
     <events>
-        <event id="E1" ageCode="M" disciplineCode="L100"/>
-        <event id="E2" ageCode="M" disciplineCode="X4X1"/>
+        <event id="E1" ageCode="M">
+            <standardevent disciplineCode="L100"/>
+        </event>
+        <event id="E2" ageCode="M">
+            <standardevent disciplineCode="X4X1"/>
+        </event>
     </events>
     <individuals>
         <individual athlete="A1" event="E1" id="I1"/>

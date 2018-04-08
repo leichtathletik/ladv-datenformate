@@ -19,6 +19,13 @@
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+      <xs:element name="eventdefinitions" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="eventdefinition" type="EventDefinition" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
       <xs:element name="events" minOccurs="0">
         <xs:complexType>
           <xs:sequence>
@@ -73,11 +80,36 @@
     <xs:attribute name="country" type="xs:string"/>
   </xs:complexType>
 
-  <xs:complexType name="event">
+  <xs:complexType name="EventDefinition">
     <xs:sequence/>
     <xs:attribute name="id" type="xs:ID" use="required"/>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="shortName" type="xs:string" use="required"/>
+    <xs:attribute name="eventtype" type="EventType" use="required"/>
+    <xs:attribute name="formattype" type="FormatType" use="required"/>
+    <xs:attribute name="precision" type="Precision" use="required"/>
+    <xs:attribute name="vendorCode" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="event">
+    <xs:sequence>
+      <xs:choice minOccurs="0">
+        <xs:element name="standardevent" type="StandardEvent"/>
+        <xs:element name="customevent" type="CustomEvent"/>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
     <xs:attribute name="ageCode" type="AgeCode" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="StandardEvent">
+    <xs:sequence/>
     <xs:attribute name="disciplineCode" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="CustomEvent">
+    <xs:sequence/>
+    <xs:attribute name="eventdefinition" type="xs:IDREF" use="required"/>
   </xs:complexType>
 
   <xs:complexType name="individual">
@@ -158,6 +190,39 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="M"/>
       <xs:enumeration value="W"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="EventType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="INDIVIDUAL"/>
+      <xs:enumeration value="COMBINEDEVENT"/>
+      <xs:enumeration value="INDIVIDUALTEAM"/>
+      <xs:enumeration value="RELAY"/>
+      <xs:enumeration value="COMBINEDEVENTTEAM"/>
+      <xs:enumeration value="TEAMCHAMPIONCHIP"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="FormatType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="POINTS"/>
+      <xs:enumeration value="METRIC"/>
+      <xs:enumeration value="TIME"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="Precision">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="METER"/>
+      <xs:enumeration value="CENTIMETER"/>
+      <xs:enumeration value="SECOND_FULL"/>
+      <xs:enumeration value="SECOND_10TH"/>
+      <xs:enumeration value="SECOND_100TH"/>
+      <xs:enumeration value="SECOND_1000TH"/>
+      <xs:enumeration value="POINTS_FULL"/>
+      <xs:enumeration value="POINTS_10TH"/>
+      <xs:enumeration value="POINTS_100TH"/>
     </xs:restriction>
   </xs:simpleType>
 

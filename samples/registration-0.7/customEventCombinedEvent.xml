@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<registration>
+    <clubs>
+        <club id="C1" number="1234" type="CLUB" name="TSV Besteck" shortname="TSV Besteck" country="GER" region="WÜ"/>
+    </clubs>
+    <athletes>
+        <athlete id="A1" number="12345" forename="Martin" lastname="Messer" yearofbirth="1996" sex="M" club="C1" country="GER"/>
+        <athlete id="A2" number="12346" forename="Gerd" lastname="Gabel" yearofbirth="1995" sex="M" club="C1" country="GER"/>
+        <athlete id="A3" number="12346" forename="Leander" lastname="Löffel" yearofbirth="1995" sex="M" club="C1" country="GER"/>
+    </athletes>
+    <eventdefinitions>
+        <eventdefinition id="ED1" name="Sprint 3-Kampf (60m/80m/100m)" shortName="Sprint 3-Kampf" eventtype="COMBINEDEVENT" formattype="POINTS" precision="POINTS_FULL"/>
+    </eventdefinitions>
+    <events>
+        <event id="E1" ageCode="M">
+            <customevent eventdefinition="ED1"/>
+        </event>
+    </events>
+    <individuals>
+        <individual athlete="A1" event="E1" id="I1"/>
+        <individual athlete="A2" event="E1" id="I2"/>
+        <individual athlete="A3" event="E1" id="I3"/>
+    </individuals>
+    <relays/>
+    <kilas/>
+</registration>
+

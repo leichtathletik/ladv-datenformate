@@ -12,8 +12,11 @@
         <athlete id="A5" number="20003" forename="Doris" lastname="Dattel" yearofbirth="2008" sex="W" club="C2" country="GER"/>
         <athlete id="A6" number="20004" forename="Einar" lastname="Erbse" yearofbirth="2008" sex="M" club="C2" country="GER"/>
     </athletes>
+    <eventdefinitions/>
     <events>
-        <event id="E1" ageCode="TU12" disciplineCode="KKILA"/>
+        <event id="E1" ageCode="TU12">
+            <standardevent disciplineCode="KKILA"/>
+        </event>
     </events>
     <individuals/>
     <relays/>
