@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<registration>
+<registration version="0.7" location="Berlin" date="2018-01-01" name="Testveranstaltung">
+    <vendor vendor="LADV" programname="LADV" programversion="&lt;version&gt;" website="https://ladv.de"/>
     <clubs>
         <club id="C1" number="1234" type="CLUB" name="TSV Besteck" shortname="TSV Besteck" country="GER" region="WÜ"/>
     </clubs>
@@ -9,10 +10,10 @@
         <athlete id="A3" number="12346" forename="Leander" lastname="Löffel" yearofbirth="1995" sex="M" club="C1" country="GER"/>
     </athletes>
     <eventdefinitions>
-        <eventdefinition id="ED1" name="2x100m Staffel" shortName="2x100m" eventtype="RELAY" formattype="TIME" precision="SECOND_100TH" vendorCode="RELAY:2x100"/>
+        <eventdefinition id="ED1" name="2x100m Staffel" shortname="2x100m" eventtype="RELAY" formattype="TIME" precision="SECOND_100TH" vendorcode="RELAY:2x100"/>
     </eventdefinitions>
     <events>
-        <event id="E1" ageCode="M">
+        <event id="E1" agecode="M">
             <customevent eventdefinition="ED1"/>
         </event>
     </events>

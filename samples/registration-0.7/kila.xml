@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<registration>
+<registration version="0.7" location="Berlin" date="2018-01-01" name="Testveranstaltung">
+    <vendor vendor="LADV" programname="LADV" programversion="&lt;version&gt;" website="https://ladv.de"/>
     <clubs>
         <club id="C1" number="1234" type="CLUB" name="TSV Besteck" shortname="TSV Besteck" country="GER" region="WÜ"/>
         <club id="C2" number="4567" type="CLUB" name="SV Obst und Gemüse" shortname="SV Obst&amp;Gemüse" country="GER" region="WÜ"/>
@@ -14,8 +15,8 @@
     </athletes>
     <eventdefinitions/>
     <events>
-        <event id="E1" ageCode="TU12">
-            <standardevent disciplineCode="KKILA"/>
+        <event id="E1" agecode="TU12">
+            <standardevent disciplinecode="KKILA"/>
         </event>
     </events>
     <individuals/>

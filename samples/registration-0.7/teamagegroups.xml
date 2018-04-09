@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<registration>
+<registration version="0.7" location="Berlin" date="2018-01-01" name="Testveranstaltung">
+    <vendor vendor="LADV" programname="LADV" programversion="&lt;version&gt;" website="https://ladv.de"/>
     <clubs>
         <club id="C1" number="1234" type="CLUB" name="TSV Musterverein" shortname="TSV Musterverein" country="GER" region="WÜ"/>
     </clubs>
@@ -9,14 +10,14 @@
     </athletes>
     <eventdefinitions/>
     <events>
-        <event id="E1" ageCode="T11">
-            <standardevent disciplineCode="TWEZ"/>
+        <event id="E1" agecode="T11">
+            <standardevent disciplinecode="TWEZ"/>
         </event>
-        <event id="E2" ageCode="T11">
-            <standardevent disciplineCode="TWEZ"/>
+        <event id="E2" agecode="T11">
+            <standardevent disciplinecode="TWEZ"/>
         </event>
-        <event id="E3" ageCode="TU12">
-            <standardevent disciplineCode="XPEN"/>
+        <event id="E3" agecode="TU12">
+            <standardevent disciplinecode="XPEN"/>
         </event>
     </events>
     <individuals>
