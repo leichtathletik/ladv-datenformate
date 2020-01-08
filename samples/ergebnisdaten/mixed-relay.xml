@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<meetingresult begindate="2020-01-06" city="Berlin" country="DEU" name="Testveranstaltung" scope="DLV">
+    <generator programname="LADV" programversion="1" vendor="LADV" website="https://ladv.de"/>
+    <clubs>
+        <club country="GER" id="AC1" name="TV Musterverein" number="12345" region="BY" type="CLUB"/>
+    </clubs>
+    <athletes>
+        <athlete club="AC1" country="GER" forename="Martin" id="TA1" lastname="Messer" number="12345" sex="M" yearofbirth="2000"/>
+        <athlete club="AC1" country="GER" forename="Gert" id="TA2" lastname="Gabel" number="12345" sex="M" yearofbirth="2000"/>
+        <athlete club="AC1" country="GER" forename="Lisa" id="TA3" lastname="Löffel" number="12345" sex="W" yearofbirth="2000"/>
+    </athletes>
+    <events>
+        <event code="X3X1" id="E1"/>
+    </events>
+    <evaluationgroups/>
+    <cupevaluations/>
+    <rounds>
+        <round ageclass="X" compositeevent="NO" event="E1" id="ROUNDR1" indoor="false" roundtype="FINAL" startofeventdate="2020-01-06">
+            <results>
+                <relay club="AC1" handtime="false" id="SR1" noncompetitive="false" place="1" result="1:48,48">
+                    <relaymember athlete="TA1" position="1"/>
+                    <relaymember athlete="TA2" position="2"/>
+                    <relaymember athlete="TA3" position="3"/>
+                </relay>
+            </results>
+            <rankings/>
+            <rankedrounds/>
+            <roundreferences/>
+        </round>
+    </rounds>
+</meetingresult>

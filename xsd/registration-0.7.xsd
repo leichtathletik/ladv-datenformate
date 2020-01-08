@@ -322,6 +322,30 @@
       <xs:enumeration value="TU8"/>
       <xs:enumeration value="TU10"/>
       <xs:enumeration value="TU12"/>
+      <xs:enumeration value="X12"/>
+      <xs:enumeration value="X13"/>
+      <xs:enumeration value="X14"/>
+      <xs:enumeration value="X15"/>
+      <xs:enumeration value="XJU14"/>
+      <xs:enumeration value="XJU16"/>
+      <xs:enumeration value="XJU18"/>
+      <xs:enumeration value="XJU20"/>
+      <xs:enumeration value="XU23"/>
+      <xs:enumeration value="X"/>
+      <xs:enumeration value="X30"/>
+      <xs:enumeration value="X35"/>
+      <xs:enumeration value="X40"/>
+      <xs:enumeration value="X45"/>
+      <xs:enumeration value="X50"/>
+      <xs:enumeration value="X55"/>
+      <xs:enumeration value="X60"/>
+      <xs:enumeration value="X65"/>
+      <xs:enumeration value="X70"/>
+      <xs:enumeration value="X75"/>
+      <xs:enumeration value="X80"/>
+      <xs:enumeration value="X85"/>
+      <xs:enumeration value="X90"/>
+      <xs:enumeration value="X95"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>

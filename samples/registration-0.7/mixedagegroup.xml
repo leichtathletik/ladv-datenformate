@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<registration version="0.7" location="Berlin" date="2018-01-01" name="Testveranstaltung">
+    <vendor vendor="LADV" programname="LADV" programversion="&lt;version&gt;" website="https://ladv.de"/>
+    <clubs>
+        <club id="C1" number="1234" type="CLUB" name="TSV Musterverein" shortname="TSV Musterverein" country="GER" region="WÜ"/>
+    </clubs>
+    <athletes>
+        <athlete id="A1" number="200001" forename="Martin" lastname="Messer" yearofbirth="1996" sex="M" club="C1" country="GER"/>
+        <athlete id="A2" number="200002" forename="Gabriel" lastname="Gabel" yearofbirth="1996" sex="M" club="C1" country="GER"/>
+        <athlete id="A3" number="200003" forename="Martina" lastname="Messer" yearofbirth="1996" sex="W" club="C1" country="GER"/>
+        <athlete id="A4" number="200004" forename="Gabriele" lastname="Gabel" yearofbirth="1996" sex="W" club="C1" country="GER"/>
+    </athletes>
+    <eventdefinitions/>
+    <events>
+        <event id="E1" agecode="X">
+            <standardevent disciplinecode="L100"/>
+        </event>
+        <event id="E2" agecode="X">
+            <standardevent disciplinecode="X4X1"/>
+        </event>
+    </events>
+    <individuals>
+        <individual athlete="A1" event="E1" id="I1"/>
+        <individual athlete="A2" event="E1" id="I2"/>
+        <individual athlete="A3" event="E1" id="I3"/>
+        <individual athlete="A4" event="E1" id="I4"/>
+    </individuals>
+    <relays>
+        <relay id="R1" club="C1" event="E2">
+            <participant athlete="A1" id="P1"/>
+            <participant athlete="A2" id="P2"/>
+            <participant athlete="A3" id="P3"/>
+            <participant athlete="A4" id="P4"/>
+        </relay>
+    </relays>
+    <kilas/>
+</registration>
+
