@@ -4,13 +4,20 @@ Hauptinformationsseite zu den LADV Datenformaten: [ladv.de/entwickler](https://l
 
 ## Meldungen
 
+### Meldungen 1.0
+
+- [Übersicht Änderungen](https://github.com/leichtathletik/ladv-datenformate/issues/16) zu 0.7 Meldungen Format
+- Dokumentation: TPD
+- XML-Schema Datei: [offizielles Schema](http://html.ladv.de/format/registration/1.0/registration.xsd) /
+  [Schema auf GitHub](https://github.com/leichtathletik/ladv-datenformate/tree/master/xsd/registration-1.0.xsd)
+- Status: DRAFT
+
 ### Meldungen 0.7
 
 - [Übersicht Änderungen](https://github.com/leichtathletik/ladv-datenformate/issues/1) zu 0.6 Meldungen Format
 - Dokumentation: [PDF](http://html.ladv.de/api/2018-04-22-LADV-Meldungen-Datenformat-0.7.pdf)
 - XML-Schema Datei: [offizielles Schema](http://html.ladv.de/format/registration/0.7/registration.xsd) /
 [Schema auf GitHub](https://github.com/leichtathletik/ladv-datenformate/tree/master/xsd/registration-0.7.xsd)
-- Status: FINAL
 
 ### Meldungen 0.6
 
@@ -18,3 +25,18 @@ Hauptinformationsseite zu den LADV Datenformaten: [ladv.de/entwickler](https://l
 - XML-Schema Datei: [offizielles Schema](http://html.ladv.de/format/registration/0.6/registration.xsd) /
 [Schema auf GitHub](https://github.com/leichtathletik/ladv-datenformate/tree/master/xsd/registration-0.6.xsd)
 - Status: DEPRECATED (Daten werden bis 30 April 2019 bereitgestellt)
+
+## Altersklassencodes
+
+Die LADV Datenformate verwenden folgende Altersklassencodes
+
+- [LADV Altersklassencode Übersicht](https://ladv.de/entwickler/altersklassen)
+- [DLV Altersklassencodes (JSON)](https://dateien.leichtathletik.de/meta/agegroups)
+
+## Disziplincodes
+
+Die LADV Datenformate verwenden folgende Disziplincodes
+
+- [LADV Disziplincode Übersicht](https://ladv.de/entwickler/disziplinen)
+- [DLV Disziplincodes (JSON)](https://dateien.leichtathletik.de/meta/disciplines)
+
