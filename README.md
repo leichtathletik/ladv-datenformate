@@ -10,7 +10,6 @@ Hauptinformationsseite zu den LADV Datenformaten: [ladv.de/entwickler](https://l
 - Dokumentation: TBD
 - XML-Schema Datei: [offizielles Schema](https://html.ladv.de/format/registration/1.0/registration.xsd) /
   [Schema auf GitHub](https://github.com/leichtathletik/ladv-datenformate/tree/master/xsd/registration-1.0.xsd)
-- Status: DRAFT
 
 ### Meldungen 0.7
 
@@ -18,13 +17,14 @@ Hauptinformationsseite zu den LADV Datenformaten: [ladv.de/entwickler](https://l
 - Dokumentation: [PDF](https://html.ladv.de/api/2018-04-22-LADV-Meldungen-Datenformat-0.7.pdf)
 - XML-Schema Datei: [offizielles Schema](https://html.ladv.de/format/registration/0.7/registration.xsd) /
 [Schema auf GitHub](https://github.com/leichtathletik/ladv-datenformate/tree/master/xsd/registration-0.7.xsd)
+- Status: DEPRECATED (Daten werden bis mindestens 31.12.2021 bereitgestellt)
 
 ### Meldungen 0.6
 
 - Dokumentation: [PDF](https://html.ladv.de/api/2018-04-22-LADV-Meldungen-Datenformat-0.6.pdf)
 - XML-Schema Datei: [offizielles Schema](https://html.ladv.de/format/registration/0.6/registration.xsd) /
 [Schema auf GitHub](https://github.com/leichtathletik/ladv-datenformate/tree/master/xsd/registration-0.6.xsd)
-- Status: DEPRECATED (Daten werden bis 30 April 2019 bereitgestellt)
+- Status: DEPRECATED (Daten werden von LADV nicht mehr in diesem Datenformat bereitgestellt)
 
 ## Stammdaten
 
