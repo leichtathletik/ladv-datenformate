@@ -2,11 +2,11 @@
 <meetingresult begindate="2020-01-06" city="Berlin" country="DEU" name="Testveranstaltung" scope="DLV">
     <generator programname="LADV" programversion="1" vendor="LADV" website="https://ladv.de"/>
     <clubs>
-        <club country="GER" id="AC1" name="TV Musterverein" number="12345" region="BY" type="CLUB"/>
+        <club country="GER" id="C1" name="TV Musterverein" number="12345" region="BY" type="CLUB"/>
     </clubs>
     <athletes>
-        <athlete club="AC1" country="GER" forename="Max" id="TA1" lastname="Mustermann" number="12345" sex="M" yearofbirth="2000"/>
-        <athlete club="AC1" country="GER" forename="Maxine" id="TA2" lastname="Mustermann" number="12346" sex="W" yearofbirth="2000"/>
+        <athlete club="C1" country="GER" forename="Max" id="A1" lastname="Mustermann" number="12345" sex="M" yearofbirth="2000"/>
+        <athlete club="C1" country="GER" forename="Maxine" id="A2" lastname="Mustermann" number="12346" sex="W" yearofbirth="2000"/>
     </athletes>
     <events>
         <event code="L100" id="E1"/>
@@ -14,10 +14,10 @@
     <evaluationgroups/>
     <cupevaluations/>
     <rounds>
-        <round ageclass="X" compositeevent="NO" event="E1" id="ROUNDR1" indoor="false" roundtype="FINAL" startofeventdate="2020-01-06">
+        <round ageclass="X" compositeevent="NO" event="E1" id="R1" indoor="false" roundtype="FINAL" startofeventdate="2020-01-06">
             <results>
-                <individual athlete="TA1" id="GI1" noncompetitive="false" place="1" result="12,22"/>
-                <individual athlete="TA2" id="GI2" noncompetitive="false" place="2" result="12,33"/>
+                <individual athlete="A1" id="I1" noncompetitive="false" place="1" result="12,22"/>
+                <individual athlete="A2" id="I2" noncompetitive="false" place="2" result="12,33"/>
             </results>
             <rankings/>
             <rankedrounds/>
