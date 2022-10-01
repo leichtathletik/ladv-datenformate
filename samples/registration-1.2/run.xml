@@ -16,9 +16,13 @@
     <events/>
     <runs>
         <run id="RUN1" disciplinecode="S10K" name="10km Sport Eichenwald Hauptlauf" agecodes="M W M30 W30" distance="10000" trackid="GER-123456789">
+            <performance date="2022-04-22" disciplinecode="S10K" indoor="false" location="Berlin" value="30:42"/>
+            <yearbest date="2022-03-17" disciplinecode="S10K" indoor="false" location="Frankfurt" value="30:12"/>
+            <personalbest date="2020-10-14" disciplinecode="S10K" indoor="false" location="Köln" value="30:02"/>
             <participant athlete="A1" id="P1"/>
             <participant athlete="A2" id="P2"/>
             <participant athlete="A5" id="P3"/>
+            <comment authorname="Geschäftstelle" order="1">Sonderstarterlaubnis durch Bundestrainer</comment>
         </run>
         <run id="RUN2" disciplinecode="SL" name="4,6km Hobbylauf" agecodes="M W M30 W30" distance="4700">
             <participant athlete="A3" id="P4"/>

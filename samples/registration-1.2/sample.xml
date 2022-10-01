@@ -5,7 +5,7 @@
         <club id="C1" number="1234" guid="12345678-abcd-abcd-abcd-cccccccccc01" type="CLUB" name="TSV Besteck" shortname="TSV Besteck" country="GER" region="WÜ"/>
     </clubs>
     <athletes>
-        <athlete id="A1" bib="1" guid="12345678-abcd-abcd-abcd-aaaaaaaaaa01" forename="Martin" lastname="Messer" yearofbirth="2002" sex="M" club="C1" country="GER" licencenumber="12345"/>
+        <athlete id="A1" bib="1" guid="12345678-abcd-abcd-abcd-aaaaaaaaaa01" forename="Martin" lastname="Messer" yearofbirth="2002" sex="M" club="C1" country="GER" licencenumber="12345" waid="1"/>
         <athlete id="A2" bib="2" guid="12345678-abcd-abcd-abcd-aaaaaaaaaa02" forename="Leon" lastname="Löffel" yearofbirth="2002" sex="M" club="C1" country="GER" licencenumber="12346"/>
         <athlete id="A3" bib="3" guid="12345678-abcd-abcd-abcd-aaaaaaaaaa03" forename="Theo" lastname="Tortenheber" yearofbirth="2002" sex="M" club="C1" country="GER" licencenumber="12347"/>
         <athlete id="A4" bib="4" guid="12345678-abcd-abcd-abcd-aaaaaaaaaa04" forename="Gertrud" lastname="Gabel" yearofbirth="2002" sex="W" club="C1" country="GER" licencenumber="12348"/>
@@ -42,6 +42,15 @@
         </individual>
         <individual id="I4" event="E4" athlete="A4">
             <performance date="2022-04-22" disciplinecode="M7K" indoor="false" location="Berlin" value="5678"/>
+            <yearbest date="2022-03-22" disciplinecode="M7K" indoor="false" location="Potsdam" value="5692"/>
+            <personalbest date="2020-10-14" disciplinecode="M7K" indoor="false" location="Hamburg" value="5817"/>
+            <personalbest date="2020-10-14" disciplinecode="H100_0838" indoor="false" location="Hamburg" value="14,16" wind="1,4"/>
+            <personalbest date="2020-10-14" disciplinecode="THOC" indoor="false" location="Hamburg" value="1,65"/>
+            <personalbest date="2020-10-14" disciplinecode="TKUG_4000" indoor="false" location="Hamburg" value="14,16"/>
+            <personalbest date="2020-10-14" disciplinecode="L200" indoor="false" location="Hamburg" value="24,40" wind="-0,4"/>
+            <personalbest date="2020-10-14" disciplinecode="TWEI" indoor="false" location="Hamburg" value="5,99" wind="0,5"/>
+            <personalbest date="2020-10-14" disciplinecode="TSPE_0600" indoor="false" location="Hamburg" value="28,34"/>
+            <personalbest date="2020-10-14" disciplinecode="L800" indoor="false" location="Hamburg" value="2:27,37"/>
         </individual>
     </individuals>
     <relays>

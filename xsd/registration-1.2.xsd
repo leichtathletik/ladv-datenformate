@@ -104,6 +104,7 @@
     <xs:attribute name="country" type="xs:string"/>
     <xs:attribute name="property" type="xs:string"/>
     <xs:attribute name="licencenumber" type="xs:int"/>
+    <xs:attribute name="waid" type="xs:int"/>
   </xs:complexType>
 
   <xs:complexType name="EventDefinition">
@@ -141,8 +142,8 @@
   <xs:complexType name="individual">
     <xs:sequence>
       <xs:element name="performance" type="performance" minOccurs="0"/>
-      <xs:element name="yearbest" type="performance" minOccurs="0"/>
-      <xs:element name="personalbest" type="performance" minOccurs="0"/>
+      <xs:element name="yearbest" type="performance" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="personalbest" type="performance" minOccurs="0" maxOccurs="unbounded"/>
       <xs:element name="comment" type="comment" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
     <xs:attribute name="id" type="xs:ID" use="required"/>
@@ -214,7 +215,11 @@
 
   <xs:complexType name="run">
     <xs:sequence>
+      <xs:element name="performance" type="performance" minOccurs="0"/>
+      <xs:element name="yearbest" type="performance" minOccurs="0"/>
+      <xs:element name="personalbest" type="performance" minOccurs="0"/>
       <xs:element name="participant" type="participant" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="comment" type="comment" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
     <xs:attribute name="id" type="xs:ID" use="required"/>
     <xs:attribute name="disciplinecode" type="xs:string" use="required"/>
