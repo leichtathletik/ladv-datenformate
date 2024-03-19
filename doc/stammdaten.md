@@ -10,7 +10,7 @@ und verwendet [XML-Schema](https://de.wikipedia.org/wiki/XML_Schema) zur Beschre
 Grundstruktur. Dieses Dokument beschreibt den Aufbau des Formats und Festlegungendie nicht in
 XML-Schema abgebildet werden können.
 
-Dieses Datenformat knüpft an ATL.TXT und VER.TXT aus den [DLV Austauschformaten](http://html.ladv.de/Leichtathletik-DLV-Austauschformate.pdf)
+Dieses Datenformat knüpft an ATL.TXT und VER.TXT aus den [DLV Austauschformaten](https://html.ladv.de/Leichtathletik-DLV-Austauschformate.pdf)
 an und bietet einen XML basierten Ersatz für die nicht mehr Zeitgemäßen MS-DOS basiertenDatenformate.
 Zudem sind im LADV Stammdaten Format neue Entwicklungen undAnforderungen der Leichtathletik
 abgebildet: Gemeinschaften und ihre Zusammenstellungen werden mit bereitgestellt.

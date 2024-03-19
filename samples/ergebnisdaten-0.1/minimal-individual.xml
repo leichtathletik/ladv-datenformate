@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<meetingresult begindate="2020-01-06" city="Berlin" country="DEU" name="Testveranstaltung" scope="DLV">
+<meetingresult begindate="2020-01-06" city="Berlin" country="GER" name="Testveranstaltung" scope="DLV">
     <generator programname="LADV" programversion="1" vendor="LADV" website="https://ladv.de"/>
     <clubs>
         <club country="GER" id="C1" name="TV Musterverein" number="12345" region="BY" type="CLUB"/>
