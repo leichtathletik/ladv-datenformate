@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<meetingresult begindate="2020-01-06" city="Berlin" country="GER" name="Testveranstaltung" scope="DLV" version="0.2">
+    <generator programname="LADV" programversion="1" vendor="LADV" website="https://ladv.de"/>
+    <clubs>
+        <club country="GER" id="C1" name="TV Musterverein" number="12345" region="BY" type="CLUB"/>
+    </clubs>
+    <athletes>
+        <athlete club="C1" country="GER" forename="Martin" guid="00000000-1111-2222-3333-444444444444" id="A1" lastname="Messer" number="12345" sex="M" yearofbirth="2000"/>
+        <athlete club="C1" country="GER" forename="Gert" guid="00000000-1111-2222-3333-444444444445" id="A2" lastname="Gabel" number="12345" sex="M" yearofbirth="2002"/>
+        <athlete club="C1" country="GER" forename="Luis" guid="00000000-1111-2222-3333-444444444446" id="A3" lastname="Löffel" number="12345" sex="W" yearofbirth="2004"/>
+    </athletes>
+    <events>
+        <event code="TKUG" id="E1"/>
+        <event code="TKUG_7260" id="E2"/>
+        <event code="TKUG_6000" id="E3"/>
+        <event code="TKUG_5000" id="E4"/>
+    </events>
+    <evaluationgroups/>
+    <cupevaluations/>
+    <rounds>
+        <round ageclass="M" compositeevent="MASTER" event="E1" id="R1" indoor="false" roundtype="FINAL" startofeventdate="2021-10-31">
+            <results>
+                <individual athlete="A1" id="I1" noncompetitive="false" place="1" result="17,77"/>
+                <individual athlete="A2" id="I2" noncompetitive="false" place="2" result="16,66"/>
+                <individual athlete="A3" id="I3" noncompetitive="false" place="3" result="15,55"/>
+            </results>
+            <rankings/>
+            <rankedrounds/>
+            <roundreferences/>
+        </round>
+        <round ageclass="M" belongsto="R1" compositeevent="PART" event="E2" id="R2" indoor="false" roundtype="FINAL" startofeventdate="2021-10-31">
+            <results>
+                <individual athlete="A1" id="I4" noncompetitive="false" place="1" result="17,77"/>
+            </results>
+            <rankings/>
+            <rankedrounds/>
+            <roundreferences/>
+        </round>
+        <round ageclass="MJU20" belongsto="R1" compositeevent="PART" event="E3" id="R3" indoor="false" roundtype="FINAL" startofeventdate="2021-10-31">
+            <results>
+                <individual athlete="A2" id="I5" noncompetitive="false" place="1" result="16,66"/>
+            </results>
+            <rankings/>
+            <rankedrounds/>
+            <roundreferences/>
+        </round>
+        <round ageclass="MJU18" belongsto="R1" compositeevent="PART" event="E4" id="R4" indoor="false" roundtype="FINAL" startofeventdate="2021-10-31">
+            <results>
+                <individual athlete="A3" id="I6" noncompetitive="false" place="1" result="15,55"/>
+            </results>
+            <rankings/>
+            <rankedrounds/>
+            <roundreferences/>
+        </round>
+    </rounds>
+</meetingresult>
+
