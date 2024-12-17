@@ -226,7 +226,7 @@
     <xs:attribute name="name" type="xs:string"/>
     <xs:attribute name="agecodes">
       <xs:simpleType>
-        <xs:list itemType="AgeCode"/>
+        <xs:list itemType="xs:string"/>
       </xs:simpleType>
     </xs:attribute>
     <xs:attribute name="distance" type="xs:int"/>
@@ -280,121 +280,6 @@
       <xs:enumeration value="POINTS_FULL"/>
       <xs:enumeration value="POINTS_10TH"/>
       <xs:enumeration value="POINTS_100TH"/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <xs:simpleType name="AgeCode">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="M3"/>
-      <xs:enumeration value="M4"/>
-      <xs:enumeration value="M5"/>
-      <xs:enumeration value="M6"/>
-      <xs:enumeration value="M7"/>
-      <xs:enumeration value="M8"/>
-      <xs:enumeration value="M9"/>
-      <xs:enumeration value="M10"/>
-      <xs:enumeration value="M11"/>
-      <xs:enumeration value="M12"/>
-      <xs:enumeration value="M13"/>
-      <xs:enumeration value="M14"/>
-      <xs:enumeration value="M15"/>
-      <xs:enumeration value="MKU6"/>
-      <xs:enumeration value="MKU8"/>
-      <xs:enumeration value="MKU10"/>
-      <xs:enumeration value="MKU12"/>
-      <xs:enumeration value="MJU14"/>
-      <xs:enumeration value="MJU16"/>
-      <xs:enumeration value="MJU18"/>
-      <xs:enumeration value="MJU20"/>
-      <xs:enumeration value="MU23"/>
-      <xs:enumeration value="M"/>
-      <xs:enumeration value="MJEDER"/>
-      <xs:enumeration value="M30"/>
-      <xs:enumeration value="M35"/>
-      <xs:enumeration value="M40"/>
-      <xs:enumeration value="M45"/>
-      <xs:enumeration value="M50"/>
-      <xs:enumeration value="M55"/>
-      <xs:enumeration value="M60"/>
-      <xs:enumeration value="M65"/>
-      <xs:enumeration value="M70"/>
-      <xs:enumeration value="M75"/>
-      <xs:enumeration value="M80"/>
-      <xs:enumeration value="M85"/>
-      <xs:enumeration value="M90"/>
-      <xs:enumeration value="M95"/>
-      <xs:enumeration value="W3"/>
-      <xs:enumeration value="W4"/>
-      <xs:enumeration value="W5"/>
-      <xs:enumeration value="W6"/>
-      <xs:enumeration value="W7"/>
-      <xs:enumeration value="W8"/>
-      <xs:enumeration value="W9"/>
-      <xs:enumeration value="W10"/>
-      <xs:enumeration value="W11"/>
-      <xs:enumeration value="W12"/>
-      <xs:enumeration value="W13"/>
-      <xs:enumeration value="W14"/>
-      <xs:enumeration value="W15"/>
-      <xs:enumeration value="WKU6"/>
-      <xs:enumeration value="WKU8"/>
-      <xs:enumeration value="WKU10"/>
-      <xs:enumeration value="WKU12"/>
-      <xs:enumeration value="WJU14"/>
-      <xs:enumeration value="WJU16"/>
-      <xs:enumeration value="WJU18"/>
-      <xs:enumeration value="WJU20"/>
-      <xs:enumeration value="WU23"/>
-      <xs:enumeration value="W"/>
-      <xs:enumeration value="WJEDER"/>
-      <xs:enumeration value="W30"/>
-      <xs:enumeration value="W35"/>
-      <xs:enumeration value="W40"/>
-      <xs:enumeration value="W45"/>
-      <xs:enumeration value="W50"/>
-      <xs:enumeration value="W55"/>
-      <xs:enumeration value="W60"/>
-      <xs:enumeration value="W65"/>
-      <xs:enumeration value="W70"/>
-      <xs:enumeration value="W75"/>
-      <xs:enumeration value="W80"/>
-      <xs:enumeration value="W85"/>
-      <xs:enumeration value="W90"/>
-      <xs:enumeration value="W95"/>
-      <xs:enumeration value="T6"/>
-      <xs:enumeration value="T7"/>
-      <xs:enumeration value="T8"/>
-      <xs:enumeration value="T9"/>
-      <xs:enumeration value="T10"/>
-      <xs:enumeration value="T11"/>
-      <xs:enumeration value="TU6"/>
-      <xs:enumeration value="TU8"/>
-      <xs:enumeration value="TU10"/>
-      <xs:enumeration value="TU12"/>
-      <xs:enumeration value="X12"/>
-      <xs:enumeration value="X13"/>
-      <xs:enumeration value="X14"/>
-      <xs:enumeration value="X15"/>
-      <xs:enumeration value="XJU14"/>
-      <xs:enumeration value="XJU16"/>
-      <xs:enumeration value="XJU18"/>
-      <xs:enumeration value="XJU20"/>
-      <xs:enumeration value="XU23"/>
-      <xs:enumeration value="X"/>
-      <xs:enumeration value="X30"/>
-      <xs:enumeration value="X35"/>
-      <xs:enumeration value="X40"/>
-      <xs:enumeration value="X45"/>
-      <xs:enumeration value="X50"/>
-      <xs:enumeration value="X55"/>
-      <xs:enumeration value="X60"/>
-      <xs:enumeration value="X65"/>
-      <xs:enumeration value="X70"/>
-      <xs:enumeration value="X75"/>
-      <xs:enumeration value="X80"/>
-      <xs:enumeration value="X85"/>
-      <xs:enumeration value="X90"/>
-      <xs:enumeration value="X95"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>
