@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<meetingresult begindate="2020-01-06" city="Berlin" country="GER" name="Testveranstaltung" scope="PARA" version="0.3">
+    <generator programname="LADV" programversion="1" vendor="LADV" website="https://ladv.de"/>
+    <clubs>
+        <club country="GER" id="C1" name="TV Musterverein" number="12345" region="BS" type="CLUB"/>
+    </clubs>
+    <athletes>
+        <athlete club="C1" country="GER" forename="Martin" id="A1" lastname="Messer" number="1" sdmsid="12345" sex="M" yearofbirth="2000"/>
+        <athlete club="C1" country="GER" forename="Gert" id="A2" lastname="Gabel" number="2" sdmsid="56789" sex="M" yearofbirth="2002"/>
+        <athlete club="C1" country="GER" forename="Luis" id="A3" lastname="Löffel" number="3" sex="M" yearofbirth="2004"/>
+        <athlete club="C1" country="GER" forename="Tim" id="A4" lastname="Tortenheber" number="4" sex="M" yearofbirth="2003"/>
+    </athletes>
+    <events>
+        <event code="TWEI" id="E1"/>
+        <event code="X4X1" id="E2"/>
+    </events>
+    <evaluationgroups/>
+    <cupevaluations/>
+    <rounds>
+        <round ageclass="M" compositeevent="NO" event="E1" id="R1" indoor="false" roundtype="FINAL" startofeventdate="2021-10-31">
+            <results>
+                <individual athlete="A1" id="I1" noncompetitive="false" class="T12" place="1" result="5,22"/>
+                <individual athlete="A2" id="I2" noncompetitive="false" class="T61" place="2" result="5,16"/>
+                <individual athlete="A3" id="I3" noncompetitive="false" class="T11" place="3" result="5,10"/>
+            </results>
+            <rankings/>
+            <rankedrounds/>
+            <roundreferences/>
+        </round>
+        <round ageclass="M" compositeevent="NO" event="E2" id="R2" indoor="false" roundtype="FINAL" startofeventdate="2021-10-31">
+            <results>
+                <relay club="C1" handtime="false" id="RE1" noncompetitive="false" place="1" result="64,44">
+                    <relaymember athlete="A1" class="T12" position="1"/>
+                    <relaymember athlete="A2" class="T61" position="2"/>
+                    <relaymember athlete="A3" class="T12" position="3"/>
+                    <relaymember athlete="A4" class="T54" position="4"/>
+                </relay>
+            </results>
+            <rankings/>
+            <rankedrounds/>
+            <roundreferences/>
+        </round>
+    </rounds>
+</meetingresult>
+
